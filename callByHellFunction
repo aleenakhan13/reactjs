@@ -1,0 +1,37 @@
+function Select(fn){
+    setTimeout(()=>{
+        console.log('select photo')
+        fn()
+    },5000)
+}
+function select2(fn1){
+    setTimeout(()=>{
+        console.log('select filter')
+        fn1()
+    },4000)
+}
+function Select3(fn2){
+    setTimeout(()=>{
+        console.log('write caption')
+        fn2()
+    },3000)
+}
+function select4(fn3){
+    setTimeout(()=>{
+        console.log('Post')
+        fn3()
+    },2000)
+}
+Select(()=>{
+    select2(()=>{
+        Select3(()=>{
+            select4()
+        })
+    })
+})
+//select2()
+//Select3()  
+//select4()
+
+/// call by hell function    
+   
